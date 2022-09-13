@@ -12,9 +12,10 @@
   height: 400px;
   position: relative;
   display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
   justify-content: center;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin: auto;
   place-items: center;
   overflow: hidden;
   border-radius: 20px;

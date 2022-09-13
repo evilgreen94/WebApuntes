@@ -1,6 +1,9 @@
 import React from "react";
 import "./ManualParallax.css";
 import "animate.css";
+import "../SectionComponent/Papito";
+import { Papito } from "../SectionComponent/Papito";
+import { Temas } from "../data/Temas";
 
 export function ManualParallax() {
   return (
@@ -17,58 +20,31 @@ export function ManualParallax() {
         </div>
       </div>
 
-      <div className="section">
-        <h2 className="border"> Matemáticas</h2>
-        <p>
-          {" "}
-          Lorem fistrum de la pradera fistro mamaar. Ese hombree amatomaa de la
-          pradera benemeritaar papaar papaar tiene musho peligro no puedor.
-          Sexuarl amatomaa diodeno sexuarl está la cosa muy malar jarl caballo
-          blanco caballo negroorl de la pradera. No puedor la caidita diodeno no
-          te digo trigo por no llamarte Rodrigor ese pedazo de a gramenawer a
-          gramenawer fistro me cago en tus muelas te va a hasé pupitaa. Papaar
-          papaar fistro apetecan está la cosa muy malar ese hombree torpedo.
-        </p>
-      </div>
-
-      <div className="bgimg-2">
+      {Temas.filter((elemento) => {
+        return elemento.tipo == "t";
+      }).map((elemento) => {
+        return <Papito key={elemento.imagen} {...elemento} />;
+      })}
+      {/* <div className="bgimg-2">
         <div className="caption">
+          <div class="cardBox">
+            <div class="card">
+              <h2>Apuntes de Mates</h2>
+
+              <div class="contenido">
+                <h3>Mates</h3>
+                <p>Los mejores apuntos de matemáticas que encontraras</p>
+              </div>
+            </div>
+          </div>
           <span className="border">Sapere Aude</span>
         </div>
-      </div>
-
-      <div className="section">
-        <h2 className="border"> Trigonometria</h2>
-        <p>
-          {" "}
-          Lorem fistrum de la pradera fistro mamaar. Ese hombree amatomaa de la
-          pradera benemeritaar papaar papaar tiene musho peligro no puedor.
-          Sexuarl amatomaa diodeno sexuarl está la cosa muy malar jarl caballo
-          blanco caballo negroorl de la pradera. No puedor la caidita diodeno no
-          te digo trigo por no llamarte Rodrigor ese pedazo de a gramenawer a
-          gramenawer fistro me cago en tus muelas te va a hasé pupitaa. Papaar
-          papaar fistro apetecan está la cosa muy malar ese hombree torpedo.
-        </p>
-      </div>
+      </div> */}
 
       <div className="bgimg-3">
         <div className="caption" class="animate__animated animate__bounce">
           <span className="border">RM</span>
         </div>
-      </div>
-
-      <div className="section">
-        <h2 className="border"> Historia del Arte</h2>
-        <p>
-          {" "}
-          Lorem fistrum de la pradera fistro mamaar. Ese hombree amatomaa de la
-          pradera benemeritaar papaar papaar tiene musho peligro no puedor.
-          Sexuarl amatomaa diodeno sexuarl está la cosa muy malar jarl caballo
-          blanco caballo negroorl de la pradera. No puedor la caidita diodeno no
-          te digo trigo por no llamarte Rodrigor ese pedazo de a gramenawer a
-          gramenawer fistro me cago en tus muelas te va a hasé pupitaa. Papaar
-          papaar fistro apetecan está la cosa muy malar ese hombree torpedo.
-        </p>
       </div>
 
       {/* ."-,.__

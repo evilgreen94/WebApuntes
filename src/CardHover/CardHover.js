@@ -3,8 +3,8 @@ import "./CardHover.css";
 
 export function CardHover() {
   return (
-    <div>
-      <div class="cardBox">
+    <>
+      {/* <div class="cardBox">
         <div class="card">
           <h2>Apuntes de Mates</h2>
 
@@ -39,7 +39,8 @@ export function CardHover() {
             </p>
           </div>
         </div>
-      </div>
-    </div>
+      </div> */}
+      </>
+    
   );
 }

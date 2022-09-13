@@ -11,25 +11,64 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
+
 .bgimg-1 {
-  background-image: url("../images/libros\ 1.jpg");
+  background-image: url("../images/libros_1.jpg");
   min-height: 100vh;
 }
 
 .bgimg-2 {
-  background-image: url("../images/libros\ 2.jpg");
+  background-image: url("../images/libros_2.jpg");
   min-height: 600px;
 }
 
 .bgimg-3 {
-  background-image: url("../images/libros\ 3.jpg");
+  background-image: url("../images/libros_3.jpg");
+  min-height: 100vh;
+}
+.bgimg-4 {
+  background-image: url("../images/libros_4.jpg");
+  min-height: 100vh;
+}
+.bgimg-5 {
+  background-image: url("../images/libros_5.jpg");
+  min-height: 100vh;
+}
+.bgimg-6 {
+  background-image: url("../images/libros_6.jpg");
+  min-height: 100vh;
+}
+.bgimg-7 {
+  background-image: url("../images/libros_7.jpg");
+  min-height: 100vh;
+}
+.bgimg-8 {
+  background-image: url("../images/libros_8.jpg");
+  min-height: 100vh;
+}
+.bgimg-9 {
+  background-image: url("../images/libros_9.jpg");
+  min-height: 100vh;
+}
+.bgimg-10 {
+  background-image: url("../images/libros_10.jpg");
+  min-height: 100vh;
+}
+.bgimg-11{
+  background-image: url("../images/libros_11.jpg");
+  min-height: 100vh;
+}
+.bgimg-12{
+  background-image: url("../images/libros_12.jpg");
   min-height: 100vh;
 }
 
 .caption {
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0;
   top: 50%;
@@ -176,4 +215,10 @@ p.small {
 .card1:hover h3 {
   transition: all 0.3s ease-out;
   color: #ffffff;
+}
+
+
+.contenedor{
+ display: flex;
+ justify-content: center;
 }
